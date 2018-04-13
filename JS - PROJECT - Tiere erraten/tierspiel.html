@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset ="utf-8">
+        <link href="tierspiel.css" rel="stylesheet">
+		<title>Tierspiel</title>
+        
+	</head>
+	<body onLoad="randTier()">  
+        <p> Welches Tier ist das?<br>
+        Achtung! ALLES KLEIN SCHREIBEN UND KEINE UMLAUTE (zB ö = oe)</p>
+        
+        
+        
+        <form id="eingabe">
+            Name:
+            <br>
+            <input id="tierinput" type="text" name="tiername" autocomplete="off" autofocus>
+            <br>
+        </form>
+        
+        <button onclick="myFunction();" onclick="rando()">Überprüfen</button>
+        <br>
+        
+        <img src="" id="bild" width="200" height="200">
+        
+        <p id="result"></p>
+        
+        <script type="text/javascript" src="tierspiel.js">
+        </script>
+    
+	</body>
+</html>
