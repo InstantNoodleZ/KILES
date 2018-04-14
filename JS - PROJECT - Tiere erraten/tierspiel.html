@@ -5,13 +5,22 @@
         <link href="tierspiel.css" rel="stylesheet">
 		<title>Tierspiel</title>
         
+        <script type="text/javascript">             //DES IS DASS MA KA ENTER DRUCKN KAU
+            function stopRKey(evt) { 
+            var evt = (evt) ? evt : ((event) ? event : null); 
+            var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null); 
+            if ((evt.keyCode == 13) && (node.type=="text"))  {return false;} } 
+            document.onkeypress = stopRKey; 
+
+        </script>
+        
+        
 	</head>
 	<body onLoad="randTier()">  
         <p> Welches Tier ist das?<br>
-        Achtung! ALLES KLEIN SCHREIBEN UND KEINE UMLAUTE (zB ö = oe)</p>
-        
-        
-        
+        Achtung! ALLES KLEIN SCHREIBEN UND KEINE UMLAUTE (zB ö = oe)<br> 
+        </p>
+              
         <form id="eingabe">
             Name:
             <br>
