@@ -1,34 +1,19 @@
-var pics = ["Hund", "Katze", "Panda", "Adler"];//, "Flamingo", "Goldfisch", "Schildkröte", "Schnecke", "Waschbär", "Wellensittich", 
-            //"Löwe", "Chamäleon", "Delfin", "Tintenfisch", "Eichhörnchen", "Tiger", "Gorilla", "Faultier"];
-
-function rando() {
-    var abfrage = Math.floor(Math.random() * pics.length);
-    return abfrage; }
-
-var rand = rando();
-
-function randTier() {
-        document.getElementById("bild").src = "images/"+pics[rand]+".jpg"; } 
+var letters = ['f', 't', 'ß', 'ä', 'ä', 'e', 'z', 'c', 'g', 't', 'l', 'm', 'z', 'p', 't', 'v', 't', 'p', 'k', 'g', 'e', 'ß', 'G'];
       
-function myFunction() {
-    var text = "";
-    var x = document.getElementById("eingabe");
-    
-        if(x[0].value==pics[rand]) {
-            document.getElementById("tierinput").value = "";            
-            document.getElementById("result").style.color = "green";    //grüner Text wenns richtig is
-            text = "des woa richtig ;-)";
-            pics[rand] = "leer";
-            rand = rando();
-            
-            while(pics[rand] == "leer") {
-                rand = rando(); } 
-            
-            randTier();
-            document.getElementById("tierinput").focus(); }
-    
-        else {
-            document.getElementById("result").style.color = "red";      //roter Text wenns falsch is
-            text = "leider foisch :-("; } 
-    
-    document.getElementById("result").innerHTML = text; }
+function check() {
+    var i;
+    var fail = 0;
+    for(i=1; i<24; i++) {
+        if(document.getElementById(i).value != letters[i-1] || document.getElementById(i).value == "")   {
+            fail++;
+        }
+    }
+    if(fail==0) {
+        document.write("kan föhla :D");
+    }
+    else {
+        document.write("trottl");
+    }
+}
+
+//document.getElementById("myBtn").disabled = true;
