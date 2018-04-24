@@ -1,0 +1,15 @@
+p {
+    font-family: Comic Sans MS;
+    font-size: 20px;
+}
+
+input {
+    width: 15px;
+    font-family: Comic Sans MS;
+    font-size: 20px;
+    background-color: lightblue;
+}
+
+input:focus {
+    background-color: lightcoral;
+}

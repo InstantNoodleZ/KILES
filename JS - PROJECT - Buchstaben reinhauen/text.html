@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset ="utf-8">
+        <link href="text.css" rel="stylesheet">
+		<title>Text</title>
+        
+        <script type="text/javascript">             //DES IS DASS MA KA ENTER DRUCKN KAU
+            function stopRKey(evt) { 
+            var evt = (evt) ? evt : ((event) ? event : null); 
+            var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null); 
+            if ((evt.keyCode == 13) && (node.type=="text"))  {return false;} } 
+            document.onkeypress = stopRKey; 
+        </script>
+        
+	</head>
+	<body> 
+        
+        <h1> Lies dir den Text durch. Wenn du fertig bist, klick auf den Button und trage die fehlenden Buchstaben ein! </h1><br><br>
+        
+        <p> Es war einmal eine Herde von
+            Schafen, denen ging es eigentlich
+            ganz gut, sie lebten auf einer großen
+            Weide in der Nähe eines Waldes.<br>
+            Allerdings gab es etwas, was die
+            Schafe sehr ärgerte. Es gab nämlich
+            in der Herde ein kleines Schaf, das
+            nicht wie all die anderen weiß, sondern schwarz war.
+            "Ein schwarzes Schaf, wie schrecklich, und das in unserer Herde, das
+            ist doch unmöglich!", sagten sie immer wieder. Und weil keiner etwas
+            mit diesem schwarzen Schaf zu tun haben wollte, musste das
+            schwarze Schaf immer allein spielen.
+            Das war natürlich ganz schön langweilig, keiner wollte mit ihm spielen
+            oder sich mit ihm unterhalten.
+            Ihr könnt euch sicher vorstellen, dass das Schaf sehr traurig war.
+            Einsam sprang es auf der Weide herum.<br>
+            Wenn es sich den anderen Schafen näherte, drehten sie ihm den
+            Rücken zu und es hörte, wie sie sich über es lustig machten.<br>
+            Oft fragte sich das kleine schwarze Schaf, warum es nicht so
+            aussehen könne wie die anderen Schafe. So stand es weiterhin
+            traurig auf der Weide und fraß allein das grüne Gras. </p> 
+        
+        <input type="button" value="Ich habe den Text gelesen und bin bereit, die Buchstaben einzutragen!" onclick="window.location.href='./buchsis.html'" />
+                   
+        <script type="text/javascript" src="text.js">
+        </script>
+    
+	</body>
+</html>
