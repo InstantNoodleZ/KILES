@@ -16,25 +16,25 @@
         
         
 	</head>
-	<body onLoad="randTier()">  
-        <p> Welches Tier ist das?<br></p>
-              
+	<body onLoad="randTier()">
+        
+        <img src="" id="bild">
+            
+        <div id="textcont"><h2>Gib den Tiernamen ein!</h2><p>(Achte auch auf Groß- und Kleinschreibung)</p>      
+        Dein Punktestand:<div id="points">X</div>
+            
         <form id="eingabe">
-            Name:
-            <br>
-            <input id="tierinput" type="text" name="tiername" autocomplete="off" autofocus>
-            <br>
+            Name:<br><input id="tierinput" type="text" name="tiername" autocomplete="off" autofocus>
         </form>
         
         <button onclick="myFunction();" onclick="rando()">Überprüfen</button>
-        <br>
-        
-        <img src="" id="bild">
-        
+        <br>        
         <p id="result"></p>
         
+        </div>
+    
         <script type="text/javascript" src="tierspiel.js">
         </script>
-    
+        
 	</body>
 </html>

@@ -2,31 +2,10 @@
     UEBUNG 6 - Bilder
 */
 body {
-    text-align: center;
     font-family: "Comic Sans MS", sans-serif, monospace;
     background: radial-gradient(#AEE6DD, #AEB7E6);
 }
-table {
-    margin-left: 20%;
-    background-color: #F1E1F1;
-}
-td:hover {
-    border: 2px dashed yellow;
-    background-color: white;
-    box-shadow: 0px 0px 25px 25px white;
-}
-td {
-    border: 2px solid seagreen;
-    background-color: #C1AEE6;
-    width: 200px;
-    color: darkslategray;
-}
-th {
-    border: 2px solid cadetblue;
-    background-color: #AEE6C1;
-    color: darkblue;
-    font-weight: 200;
-}
+
 h1 {
     font-variant: small-caps;
     color: #6495ed;
@@ -49,15 +28,17 @@ h1:hover {
 }
 
 img {
-    height: 100px;
-    width:  100px;
-}
-
-#bild {
-    
-    position: absolute;
-	left: 10%;
+    position: fixed;
+    padding: 10%;
     vertical-align:middle;
 	width: 400px;
 	height: 400px;
+    clear: left;
+    opacity: .3;
+}
+
+#textcont {
+    padding-top: 15%;
+    padding-right: 15%;
+    padding-left:  55%;
 }

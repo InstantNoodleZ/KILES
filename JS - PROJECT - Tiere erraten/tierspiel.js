@@ -6,6 +6,13 @@ function rando() {
     return abfrage; }
 
 var rand = rando();
+var points = 0;
+
+document.getElementById("tierinput").onkeypress = function(event){
+    if (event.keyCode == 13 || event.which == 13){
+        myFunction();
+    }
+};
 
 function randTier() {
         document.getElementById("bild").src = "images/"+pics[rand]+".jpg"; } 
@@ -25,10 +32,16 @@ function myFunction() {
                 rand = rando(); } 
             
             randTier();
-            document.getElementById("tierinput").focus(); }
+            document.getElementById("tierinput").focus();
+            points += 100;
+            document.getElementById("points").innerHTML = points;
+        }
     
         else {
             document.getElementById("result").style.color = "red";      //roter Text wenns falsch is
-            text = "leider foisch :-("; } 
+            text = "leider foisch :-(";
+            points -= 10;
+            document.getElementById("points").innerHTML = points;
+        } 
     
     document.getElementById("result").innerHTML = text; }
