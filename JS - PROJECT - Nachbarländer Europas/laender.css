@@ -1,0 +1,21 @@
+#picture {
+    text-align: center;
+}
+
+#answers {
+    padding: 20px;
+}
+
+#0 {background-color: #40A4D8}  /*NOE*/
+#1 {background-color: #33BEB8}  /*TIR*/
+#2 {background-color: #B2C225}  /*STM*/
+#3 {background-color: #FECC2F}  /*SLZ*/
+#4 {background-color: #F9A228}  /*BGL*/
+#5 {background-color: #F6621F}  /*VBG*/
+#6 {background-color: #DB3838}  /*KTN*/
+#7 {background-color: #EE657A}  /*OOE*/
+#8 {background-color: #A363D9}  /*VIE*/
+
+#btn {
+    text-align: center;
+}
